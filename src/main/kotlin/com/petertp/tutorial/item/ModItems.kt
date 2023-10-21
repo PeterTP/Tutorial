@@ -11,8 +11,8 @@ import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 
 object ModItems {
-    private val RUBY = registerItem("ruby", Item(FabricItemSettings()))
-    private val RAW_RUBY = registerItem("raw_ruby", Item(FabricItemSettings()))
+    val RUBY = registerItem("ruby", Item(FabricItemSettings()))
+    val RAW_RUBY = registerItem("raw_ruby", Item(FabricItemSettings()))
 
     private fun addItemsToIngredientItemGroup(entries: FabricItemGroupEntries) {
         entries.add(RUBY)
@@ -22,7 +22,7 @@ object ModItems {
         return Registry.register(Registries.ITEM, Identifier(Tutorial.MOD_ID, name), item)
     }
     fun registerModItems() {
-        Tutorial.logger.info("Registering Mod Items for " + Tutorial.MOD_ID)
+        Tutorial.logger.info("Registering Items")
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup)
     }
 }
