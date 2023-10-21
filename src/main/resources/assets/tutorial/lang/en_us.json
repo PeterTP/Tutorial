@@ -1,4 +1,9 @@
 {
+  "itemgroup.ruby": "Ruby Group",
+
   "item.tutorial.ruby": "Ruby",
-  "item.tutorial.raw_ruby": "Raw Ruby"
+  "item.tutorial.raw_ruby": "Raw Ruby",
+
+  "block.tutorial.ruby_block": "Block of Ruby",
+  "block.tutorial.ruby_ore": "Ruby Ore"
 }
