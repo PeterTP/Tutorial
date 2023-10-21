@@ -3,21 +3,27 @@
 	"id": "tutorial",
 	"version": "${version}",
 	"name": "tutorial",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Peter's Tutorial",
 	"authors": [
 		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/PeterTP/Tutorial"
 	},
-	"license": "CC0-1.0",
+	"license": "Apache License 2.0",
 	"icon": "assets/tutorial/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			{
 				"value": "com.petertp.tutorial.Tutorial",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.petertp.tutorial.TutorialClient",
 				"adapter": "kotlin"
 			}
 		],
