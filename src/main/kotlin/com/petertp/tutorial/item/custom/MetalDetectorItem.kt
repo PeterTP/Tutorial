@@ -44,8 +44,7 @@ class MetalDetectorItem(settings: Settings?) : Item(settings) {
     private fun outputValuableCoordinates(blockPos: BlockPos, player: PlayerEntity?, block: Block) {
         player!!.sendMessage(
             Text.literal(
-                "Found " + block.asItem().name.string + " at " +
-                        "(" + blockPos.x + ", " + blockPos.y + ", " + blockPos.z + ")"
+                "Found ${block.asItem().name.string} at ( ${blockPos.x},  ${blockPos.y}, ${blockPos.z})"
             ), false
         )
     }

@@ -4,7 +4,6 @@ import com.petertp.tutorial.Tutorial
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents.ModifyEntries
 import com.petertp.tutorial.block.ModBlocks
 import com.petertp.tutorial.item.custom.MetalDetectorItem
 import com.petertp.tutorial.item.custom.ModArmorItem

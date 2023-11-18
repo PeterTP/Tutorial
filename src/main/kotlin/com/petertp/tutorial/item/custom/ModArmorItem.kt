@@ -13,6 +13,17 @@ import net.minecraft.world.World
 
 class ModArmorItem(material: ArmorMaterial?, type: Type?, settings: Settings?) :
     ArmorItem(material, type, settings) {
+    companion object {
+        private val MATERIAL_TO_EFFECT_MAP: Map<ArmorMaterial, StatusEffectInstance> =
+            ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>()
+                .put(
+                    ModArmorMaterials.RUBY, StatusEffectInstance(
+                        StatusEffects.HASTE, 400, 1,
+                        false, false, true
+                    )
+                ).build()
+    }
+    
     override fun inventoryTick(stack: ItemStack, world: World, entity: Entity, slot: Int, selected: Boolean) {
         if (!world.isClient()) {
             if (entity is PlayerEntity && hasFullSuitOfArmorOn(entity)) {
@@ -61,16 +72,5 @@ class ModArmorItem(material: ArmorMaterial?, type: Type?, settings: Settings?) :
         val breastplate = player.inventory.getArmorStack(2).item as ArmorItem
         val helmet = player.inventory.getArmorStack(3).item as ArmorItem
         return helmet.material === material && breastplate.material === material && leggings.material === material && boots.material === material
-    }
-
-    companion object {
-        private val MATERIAL_TO_EFFECT_MAP: Map<ArmorMaterial, StatusEffectInstance> =
-            ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>()
-                .put(
-                    ModArmorMaterials.RUBY, StatusEffectInstance(
-                        StatusEffects.HASTE, 400, 1,
-                        false, false, true
-                    )
-                ).build()
     }
 }

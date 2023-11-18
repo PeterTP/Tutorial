@@ -14,7 +14,6 @@ import net.minecraft.loot.entry.ItemEntry
 import net.minecraft.loot.entry.LeafEntry
 import net.minecraft.loot.entry.LootPoolEntry
 import net.minecraft.loot.function.ApplyBonusLootFunction
-import net.minecraft.loot.function.LootFunctionConsumingBuilder
 import net.minecraft.loot.function.SetCountLootFunction
 import net.minecraft.loot.provider.number.UniformLootNumberProvider
 import net.minecraft.predicate.StatePredicate
@@ -47,7 +46,7 @@ class ModLootTableProvider(dataOutput: FabricDataOutput?) : FabricBlockLootTable
         )
     }
 
-    fun copperLikeOreDrops(drop: Block?, item: Item?): LootTable.Builder {
+    private fun copperLikeOreDrops(drop: Block?, item: Item?): LootTable.Builder {
         return dropsWithSilkTouch(
             drop, applyExplosionDecay(
                 drop,

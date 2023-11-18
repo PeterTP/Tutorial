@@ -25,6 +25,8 @@ enum class ModArmorMaterials(
             )
         });
 
+    private val BASE_DURABILITY = intArrayOf(11, 16, 15, 13)
+
     override fun getDurability(type: ArmorItem.Type): Int {
         return BASE_DURABILITY[type.ordinal] * durabilityMultiplier
     }
@@ -55,9 +57,5 @@ enum class ModArmorMaterials(
 
     override fun getKnockbackResistance(): Float {
         return knockbackResistance
-    }
-
-    companion object {
-        private val BASE_DURABILITY = intArrayOf(11, 16, 15, 13)
     }
 }

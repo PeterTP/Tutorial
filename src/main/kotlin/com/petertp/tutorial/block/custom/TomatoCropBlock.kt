@@ -10,6 +10,11 @@ import net.minecraft.state.property.IntProperty
 import net.minecraft.state.property.Properties
 
 class TomatoCropBlock(settings: Settings?) : CropBlock(settings) {
+    companion object {
+        const val MAX_AGE = 5
+        val AGE: IntProperty = Properties.AGE_5
+    }
+
     override fun getSeedsItem(): ItemConvertible {
         return ModItems.TOMATO_SEEDS
     }
@@ -24,10 +29,5 @@ class TomatoCropBlock(settings: Settings?) : CropBlock(settings) {
 
     override fun appendProperties(builder: StateManager.Builder<Block, BlockState>) {
         builder.add(AGE)
-    }
-
-    companion object {
-        const val MAX_AGE = 5
-        val AGE = Properties.AGE_5
     }
 }

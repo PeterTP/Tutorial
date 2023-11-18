@@ -11,13 +11,13 @@ object ModTags {
     object Blocks {
         val METAL_DETECTOR_DETECTABLE_BLOCKS = createTag("metal_detector_detectable_blocks")
         private fun createTag(name: String): TagKey<Block> {
-            return TagKey.of<Block>(RegistryKeys.BLOCK, Identifier(Tutorial.MOD_ID, name))
+            return TagKey.of(RegistryKeys.BLOCK, Identifier(Tutorial.MOD_ID, name))
         }
     }
 
     object Items {
         private fun createTag(name: String): TagKey<Item> {
-            return TagKey.of<Item>(RegistryKeys.ITEM, Identifier(Tutorial.MOD_ID, name))
+            return TagKey.of(RegistryKeys.ITEM, Identifier(Tutorial.MOD_ID, name))
         }
     }
 }

@@ -91,18 +91,18 @@ object ModBlocks {
         "ruby_trapdoor",
         TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON)
     )
-    val TOMATO_CROP: Block = Registry.register<Block, TomatoCropBlock>(
+    val TOMATO_CROP: Block = Registry.register(
         Registries.BLOCK, Identifier(Tutorial.MOD_ID, "tomato_crop"),
         TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT))
     )
 
     private fun registerBlock(name: String, block: Block): Block {
         registerBlockItem(name, block)
-        return Registry.register<Block, Block>(Registries.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
+        return Registry.register(Registries.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
     }
 
     private fun registerBlockItem(name: String, block: Block): Item {
-        return Registry.register<Item, BlockItem>(
+        return Registry.register(
             Registries.ITEM, Identifier(Tutorial.MOD_ID, name),
             BlockItem(block, FabricItemSettings())
         )
