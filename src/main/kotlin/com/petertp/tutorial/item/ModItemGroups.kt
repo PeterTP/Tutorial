@@ -22,6 +22,7 @@ object ModItemGroups {
                 entries.add(ModBlocks.RUBY_BLOCK)
                 entries.add(ModBlocks.RUBY_ORE)
             }.build())
+
     fun registerItemGroups() {
         Tutorial.logger.info("Registering Item Groups")
     }

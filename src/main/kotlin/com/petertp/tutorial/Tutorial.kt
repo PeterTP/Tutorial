@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory
 object Tutorial : ModInitializer {
 	const val MOD_ID = "tutorial"
 	val logger: Logger = LoggerFactory.getLogger(MOD_ID)
-
 	override fun onInitialize() {
 		logger.info("Loading Server-Side!")
 		ModItemGroups.registerItemGroups()

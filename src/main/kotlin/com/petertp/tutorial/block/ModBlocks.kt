@@ -20,9 +20,11 @@ object ModBlocks {
         registerBlockItem(name, block)
         return Registry.register(Registries.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
     }
+
     private fun registerBlockItem(name: String, block: Block): Item {
         return Registry.register(Registries.ITEM, Identifier(Tutorial.MOD_ID, name), BlockItem(block, FabricItemSettings()))
     }
+
     fun registerModBlocks() {
         Tutorial.logger.info("Registering Blocks")
     }
