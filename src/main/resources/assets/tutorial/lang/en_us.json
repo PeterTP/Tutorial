@@ -1,9 +1,46 @@
 {
-  "itemgroup.ruby": "Ruby Group",
-
   "item.tutorial.ruby": "Ruby",
   "item.tutorial.raw_ruby": "Raw Ruby",
+  "item.tutorial.metal_detector": "Metal Detector",
+
+  "item.tutorial.tomato": "Tomato",
+  "item.tutorial.coal_briquette": "Coal Briquette",
+
+  "item.tutorial.ruby_staff": "Ruby Staff",
+
+  "item.tutorial.ruby_pickaxe": "Ruby Pickaxe",
+  "item.tutorial.ruby_axe": "Ruby Axe",
+  "item.tutorial.ruby_shovel": "Ruby Shovel",
+  "item.tutorial.ruby_sword": "Ruby Sword",
+  "item.tutorial.ruby_hoe": "Ruby Hoe",
+
+  "item.tutorial.ruby_helmet": "Ruby Helmet",
+  "item.tutorial.ruby_chestplate": "Ruby Chestplate",
+  "item.tutorial.ruby_leggings": "Ruby Leggings",
+  "item.tutorial.ruby_boots": "Ruby Boots",
+  "item.tutorial.tomato_seeds": "Tomato Seeds",
 
   "block.tutorial.ruby_block": "Block of Ruby",
-  "block.tutorial.ruby_ore": "Ruby Ore"
+  "block.tutorial.raw_ruby_block": "Block of Raw Ruby",
+
+  "block.tutorial.ruby_ore": "Ruby Ore",
+  "block.tutorial.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.tutorial.nether_ruby_ore": "Nether Ruby Ore",
+  "block.tutorial.end_stone_ruby_ore": "End Stone Ruby Ore",
+
+  "block.tutorial.sound_block": "Sound Block",
+
+  "block.tutorial.ruby_stairs": "Ruby Stairs",
+  "block.tutorial.ruby_slab": "Ruby Slab",
+  "block.tutorial.ruby_button": "Ruby Button",
+  "block.tutorial.ruby_pressure_plate": "Ruby Pressure Plate",
+  "block.tutorial.ruby_fence": "Ruby Fence",
+  "block.tutorial.ruby_fence_gate": "Ruby Fence Gate",
+  "block.tutorial.ruby_wall": "Ruby Wall",
+  "block.tutorial.ruby_door": "Ruby Door",
+  "block.tutorial.ruby_trapdoor": "Ruby Trapdoor",
+
+  "item.tutorial.metal_detector.tooltip": "Finds valuables underground",
+
+  "itemgroup.ruby": "Ruby Tutorial Group"
 }
